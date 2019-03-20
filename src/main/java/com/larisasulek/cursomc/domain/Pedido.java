@@ -29,6 +29,7 @@ public class Pedido implements Serializable {
 	private Integer id;
 	private Date instante;
 	
+	
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="pedido") //mapeado por >>pedido na classe Pagamento
 	private Pagamento pagamento;
 	
